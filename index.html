@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- on fait un reset css -->
+    <link rel="stylesheet" href="/assets/css/reset.css">
+    <!-- on lie notre fichier css -->
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <!-- on lie notre fichier js -->
+    <script defer src="/assets/js/script.js"></script>
+    <title>La Manu - FICHE DE RENSEIGNEMENT DE L'ETUDIANT</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="assets/svg/LaManuUltraCompact_RVB_white.svg">
+        </div>
+    </header>
+    <main>
+        <div class="transparent-background">
+            <div class="steps-container">
+                <h1>FICHE DE RENSEIGNEMENT DE L'ETUDIANT</h1>
+                <div class="steps-wrapper">
+                    <div id="step-one-circle" class="steps">1</div>
+                    <div class="line"></div>
+                    <div id="step-two-circle" class="steps">2</div>
+                    <div class="line"></div>
+                    <div id="step-three-circle" class="steps">3</div>
+                    <div class="line"></div>
+                    <div id="step-four-circle" class="steps">4</div>
+                    <div class="line"></div>
+                    <div id="step-five-cirle" class="steps">5</div>
+                    <div class="line"></div>
+                    <div id="step-six-circle" class="steps">6</div>
+                </div>
+            </div>
+            <div class="form-container">
+
+
+                <!-- étape 1 du formulaire -->
+
+                <form method="post" action="">
+                    <div class="step step-one">
+                        <div class="fields">
+                            <label for="lastName">Nom</label>
+                            <input type="text" id="lastName" name="lastName">
+                            <label for="firstName">Prénom</label>
+                            <input type="text" id="firstName" name="firstName">
+                            <label for="email">Adresse mail</label>
+                            <input type="email" id="email" name="email">
+                            <label for="smartphoneNumber">Téléphone portable</label>
+                            <input type="tel" id="smartphoneNumber" name="smartphoneNumber">
+                            <label for="phoneNumber">Téléphone fixe</label>
+                            <input type="tel" id="phoneNumber" name="phoneNumber">
+                        </div>
+                        <div class="buttons">
+                            <button type="button" id="next">Etape suivante</button>
+                            <button type="button" id="prev">Revenir à l'étape précédente</button>
+                        </div>
+                    </div>
+    
+    
+                     <!-- étape 2 du formulaire -->
+    
+    
+                    <div class="step step-two">
+                        <div class="fields">
+                            <label for="adress">Adresse</label>
+                            <input type="text" id="adress" name="adress">
+                            <label for="city">Ville</label>
+                            <input type="text" id="city" name="city">
+                            <label for="postalCode">Code postal</label>
+                            <input type="number" id="postalCode" name="postalCode">
+                        </div>
+                        <div class="buttons">
+                            <button type="button" id="next">Etape suivante</button>
+                            <button type="button" id="prev">Revenir à l'étape précédente</button>
+                        </div>
+                    </div>
+    
+    
+                     <!-- étape 3 du formulaire -->
+    
+    
+                    <div class="step step-three">
+                        <div class="fields">
+                            <div class="birth">
+                                <label for="birth">Date de naissance</label><br>
+                                <input type="number" name="day" id="day" placeholder="jj">
+                                <input type="number" name="month" id="month" placeholder ="mm">
+                                <input type="number" name="year" id="year" placeholder="aaaa">
+                            </div>
+                            <label for="country">Pays de naissance</label><br>
+                            <select name="country" id="country">
+                                <option value="">Selectionnez un pays</option>
+                            </select><br>
+                            <label for="birthPlace">Ville et département de naissance</label>
+                            <input type="text" id="birthPlace" name="birthPlace">
+                            <label for="nationality">Nationalité</label><br>
+                            <select name="nationality" id="nationality">
+                                <option value="">Selectionnez une nationalité</option>
+                            </select>
+                        </div>
+                        <div class="buttons">
+                            <button type="button" id="next">Etape suivante</button>
+                            <button type="button" id="prev">Revenir à l'étape précédente</button>
+                        </div>
+                    </div>
+    
+    
+                     <!-- étape 4 du formulaire -->
+    
+    
+                    <div class="step step-four">
+                        <div class="fields">
+                            <p>Dernière classe suivie :</p>
+                            <div>
+                              <input type="radio" id="class" name="class" value="terminale"
+                                     checked>
+                              <label for="class">Terminale</label>
+                            </div>
+                            <div>
+                              <input type="radio" id="class" name="class" value="1ère ou 2ème année de DEUG, DUT, BTS">
+                              <label for="class">1ère ou 2ème année de DEUG, DUT, BTS</label>
+                            </div>
+                            <div>
+                              <input type="radio" id="class" name="class" value="Classe préparatoire">
+                              <label for="class">Classe préparatoire</label>
+                            </div>
+                            <p id="degreeP">Diplômes obtenus :</p>
+                            <div>
+                              <input type="radio" id="degree" name="degree" value="Baccalauréat général/technologique/professionnel"
+                                     checked>
+                              <label for="degree">Baccalauréat général/technologique/professionnel</label>
+                            </div>
+                            <div>
+                              <input type="radio" id="degree" name="degree" value="DEUG, DUT, BTS ou autre diplôme de niveau BAC +3">
+                              <label for="degree">DEUG, DUT, BTS ou autre diplôme de niveau BAC +3</label>
+                            </div>
+                            <div>
+                              <input type="radio" id="degree" name="degree" value="Diplôme de niveau BAC +3 ou plus">
+                              <label for="degree">Diplôme de niveau BAC +3 ou plus</label>
+                            </div>
+                        </div>
+                        <div class="buttons">
+                            <button type="button" id="next">Etape suivante</button>
+                            <button type="button" id="prev">Revenir à l'étape précédente</button>
+                        </div>
+                    </div>
+    
+    
+                     <!-- étape 5 du formulaire -->
+    
+                    <!-- <p id="urgency">Personnes à prevenir en cas d'urgence</p> -->
+                    <div class="step step-five">
+                        <div class="fields">
+                            <label for="lastName">Nom</label>
+                            <input type="text" id="lastName" name="lastName">
+                            <label for="firstName">Prénom</label>
+                            <input type="text" id="firstName" name="firstName">
+                            <label for="email">Adresse mail</label>
+                            <input type="email" id="email" name="email">
+                            <label for="smartphoneNumber">Téléphone portable</label>
+                            <input type="tel" id="smartphoneNumber" name="smartphoneNumber">
+                            <label for="phoneNumber">Téléphone fixe</label>
+                            <input type="tel" id="phoneNumber" name="phoneNumber">
+                        </div>
+                        <div class="buttons">
+                            <button type="button" id="next">Etape suivante</button>
+                            <button type="button" id="prev">Revenir à l'étape précédente</button>
+                        </div>
+                    </div>
+    
+    
+                      <!-- étape 6 du formulaire -->
+    
+                      <div class="step step-six">
+                        <div class="fields">
+                            <label for="informations">Autres renseignements que vous jugez 
+                                utiles de porter à notre connaissance 
+                                (allergies,handicap, autres, ...)</label>
+                            <textarea name="informations" id="informations"></textarea>
+                            <div>
+                                <input type="checkbox" id="condition1" name="condition1">
+                                <label for="condition1"> J’ai lu et je m’engage à respecter toutes les 
+                                    clauses du règlement intérieur qui m’a été fourni
+                                    dans le Livret d’Accueil</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" id="condition2" name="condition2">
+                                <label for="condition2"> J’ai lu et je m’engage à respecter toutes les 
+                                    clauses de la charte informatique qui m’a été
+                                    fournie dans le Livret d’Accueil</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" id="condition3" name="condition3">
+                                <label for="condition3"> J’ai lu et je m’engage à respecter toutes les 
+                                    clauses du protocole sanitaire</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" id="condition4" name="condition4">
+                                <label for="condition4"> J'autorise LA MANU / NOVEI FORMATION à utiliser 
+                                    les clichés me représentant dans le cadre de la 
+                                    formation et de ses activités annexes sur son site
+                                     internet, ses réseaux sociaux officiels et tout
+                                     autre support de la formation.</label>
+                            </div>
+                        </div>
+                        <div class="buttons">
+                            <button type="submit" id="next">Finaliser</button>
+                            <button type="submit" id="prev">Revenir à l'étape précédente</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="footer-wrapper">
+            <div class="logo">
+                <img src="assets/svg/LaManuUltraCompact_RVB_white.svg">
+            </div>
+            <div class="socials-wrapper">
+                <div class="facebook">
+                    <img src="assets/svg/facebook.svg">
+                </div>
+                <div class="instagram">
+                    <img src="assets/svg/instagram.svg">
+                </div>
+                <div class="youtube">
+                    <img src="/assets/svg/youtube.svg">
+                </div>
+                <div class="linkedin">
+                    <img src="/assets/svg/linkedin.svg">
+                </div>
+            </div>
+            <nav class="links-wrapper">
+                <a class="footer-link" href="#">Mentions légales</a>
+                <a class="footer-link" href="#">Politique des données personnelles</a>
+                <a class="footer-link" href="#">CGU</a>
+                <a class="footer-link" href="#">CGV Formation professionnelle continue</a>
+                <a class="footer-link" href="#">Conditions Générales de Vente – Bachelor</a>
+            </nav>
+        </div>
+    </footer>
+</body>
+</html>
